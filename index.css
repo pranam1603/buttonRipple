@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500;700&display=swap');
+body {
+    font-family: 'Mulish', 'sans-serif';
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+button {
+    background-color: black;
+    color: blanchedalmond;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+button .circle {
+    position: absolute;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50px, -50px) scale(0);
+    border-radius: 50%;
+    animation: scaale 0.5s ease-out;
+}
+
+@keyframes scaale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
